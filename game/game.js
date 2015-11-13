@@ -1,6 +1,6 @@
-var currentPlayer = 'one'
+// var currentPlayer = 'one'
 
-var body = document.querySelector('body')
+// var body = document.querySelector('body')
 
 var title = document.querySelector('h1')
 
@@ -15,10 +15,7 @@ var BM = document.querySelector('#BM')
 var BR = document.querySelector('#BR')
 
 
-
-body.addEventListener('click', function listener(event) {
-
-  function winner() {
+  var winner = function() {
 
   if (TL.textContent === "x" && TM.textContent === "x" && TR.textContent === "x") return "one"
   if (ML.textContent === "x" && MM.textContent === "x" && MR.textContent === "x") return "one"
@@ -45,6 +42,9 @@ body.addEventListener('click', function listener(event) {
   }
 
 
+body.addEventListener('click', listener)
+
+function listener(event) {
 
   var tile = event.target //assigning var tile to the event target
 
@@ -69,7 +69,7 @@ body.addEventListener('click', function listener(event) {
     } else if (win === "two") {
       title.textContent = "Player two wins"
     }
-})
+}
 
 
 
