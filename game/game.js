@@ -1,6 +1,6 @@
-// var currentPlayer = 'one'
+var currentPlayer = 'one'
 
-// var body = document.querySelector('body')
+var body = document.querySelector('body')
 
 var title = document.querySelector('h1')
 
